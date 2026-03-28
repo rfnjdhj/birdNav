@@ -23,4 +23,16 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          utils: ['nanoid', 'localforage'],
+          icons: ['@icon-park/react'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 });

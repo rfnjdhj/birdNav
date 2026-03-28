@@ -1,10 +1,10 @@
 import "./App.css";
 import { Search } from "@/component/Search";
 import "@icon-park/react/styles/index.css";
-import { Background } from "./component/Background";
-import Store from "./store";
-import TodoList from "./component/TodoList";
-import Dock from "./component/Dock";
+import { Background } from "@/component/Background";
+import Store from "@/store";
+import TodoList from "@/component/TodoList";
+import Dock from "@/component/Dock";
 
 const App = () => {
   return (
